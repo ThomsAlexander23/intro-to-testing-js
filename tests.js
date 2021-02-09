@@ -43,4 +43,13 @@ describe('sayHello', function() {
     it('should return "Hello, World" when called with false', function() {
     expect(sayHello(false)).toBe("Hello, World!");
     });
+    it('should return "Hello, World" when called with null', function() {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it('should return "Hello, 5" when called with the number 5', function() {
+        expect(sayHello(5)).toBe("Hello, 5!");
+    });
+    it('should return "Hello, 2.17" when called with 2.17', function() {
+        expect(sayHello(2.17)).toBe("Hello, 2.17!");
+    });
 });

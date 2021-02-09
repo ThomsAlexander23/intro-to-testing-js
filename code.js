@@ -4,10 +4,11 @@ function helloWorld() {
 }
 // sayHello function
 function sayHello(name= "World") {
-    if (name === true || name === false){
+    if ((name === true) || (name === false) || (name === null)){
         return sayHello();
     }
     else {
+        name = name.toString()
         return "Hello, " + name + "!";
     }
 }
