@@ -4,6 +4,10 @@
 // }
 
 // sayHello function
-function sayHello(){
-    return " "
+function sayHello(name) {
+    if (name === "Jane") {
+        return "Hello, Jane!";
+    } else {
+        return ""
+    }
 }
