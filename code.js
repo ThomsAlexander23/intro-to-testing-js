@@ -1,15 +1,11 @@
 // helloWorld function 
-// function helloWorld() {
-//     return "Hello, World!";
-// }
-
+function helloWorld() {
+    return "Hello, World!";
+}
 // sayHello function
 function sayHello(name= "World") {
-    if (name === true){
-        return "Hello, World!"
-    }
-    else if (name === false){
-        return "Hello, World!"
+    if (name === true || name === false){
+        return sayHello();
     }
     else {
         return "Hello, " + name + "!";
