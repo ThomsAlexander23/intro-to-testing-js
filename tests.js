@@ -34,4 +34,13 @@ describe('sayHello', function() {
     it('it should require a parameter "name" when called', function() {
         expect(sayHello(name)).toBe("Hello, " + name + "!");
     });
+    it('should return "Hello, World! when empty', function() {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when called with true', function(){
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World" when called with false', function() {
+    expect(sayHello(false)).toBe("Hello, World!");
+    });
 });

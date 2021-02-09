@@ -4,7 +4,14 @@
 // }
 
 // sayHello function
-function sayHello(name) {
+function sayHello(name= "World") {
+    if (name === true){
+        return "Hello, World!"
+    }
+    else if (name === false){
+        return "Hello, World!"
+    }
+    else {
         return "Hello, " + name + "!";
-
+    }
 }
